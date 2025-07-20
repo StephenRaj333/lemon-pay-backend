@@ -1,0 +1,30 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "docker:build": "docker build -t lemon-pay-backend .",
+    "docker:run": "docker run -p 5000:5000 lemon-pay-backend",
+    "docker:compose": "docker-compose up --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.4",
+    "redis": "^4.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
