@@ -51,6 +51,16 @@ const invalidateUserCache = async (userId) => {
   }
 };
 
+
+// testing api 
+
+router.get("/", (req, res) => {  
+  res.status(200).json({
+    message: "Welcome to the Lemon Pay API",   
+    timestamp: new Date().toISOString()
+  });
+});
+
 // Login API
 router.post("/auth/login", async (req, res) => {    
   try {
