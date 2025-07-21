@@ -77,7 +77,7 @@ router.post("/auth/login", async (req, res) => {
     const user = await userSchema.findOne({ email });
     if (!user) {
       return res.status(401).json({
-        message: "Invalid email or password",
+        message: "Invalid email or password ! Please Sign Up ",
       });
     }
 
